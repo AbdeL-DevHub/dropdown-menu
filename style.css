@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+  font-family:'inter';
+}
+
+.dropdown{
+  display:flex;
+  flex-direction: column;
+  gap:0.2rem;
+  justify-content: flex-start;
+  list-style:none;
+  color:hsl(240 0% 25%);
+  position:absolute;
+  visibility: hidden;
+  background-color:whitesmoke;
+  padding:1rem;
+  left: 50%;
+  transform: translateX(-45%);
+  text-align: center;
+  border-radius:10px;
+  box-shadow: 0px 2px 5px 0 whitesmoke;
+} 
+ .relative {
+  position: relative;
+}
+nav > ul {
+  display: flex;
+  gap:3rem;
+  justify-content:center;
+  list-style:none;
+}
+
+a{
+  text-decoration:none;
+  color:hsl(240 0% 25%);
+  font-size:inherit;
+}
+
+a:hover {
+  color:orangered;
+}
+
+.relative:hover .dropdown {
+  visibility:visible;
+}
+
+nav {
+  background-color:whitesmoke;
+  padding:1.5rem;
+}
+
+ul > li {
+  list-style:none;
+}
+
+.phone-dropdown,
+.tablet-dropdown,
+.foldable-dropdown {
+  display:;
+  text-align:center;
+  padding:0.5rem;
+  text-wrap:nowrap;
+}
+
+:is(.phone-relative, .tablet-relative, .foldable-relative) > a:nth-child(1){
+  color:steelblue;
+}
+
+h3 {
+  color:steelblue;
+}
