@@ -69,3 +69,7 @@ ul > li {
 h3 {
   color:steelblue;
 }
+
+nav > ul > li > a {
+  font-weight:600;
+}
